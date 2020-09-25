@@ -1,13 +1,13 @@
 import { Router } from "express";
-var router = Router();
+var router2 = Router();
 
-router.post('/', function (req, res) {
+router2.post('/', function (req, res) {
     var input = req.body['input'];
    // let result = JSON.stringify(parseInt(input) * parseInt(input));
-    result =  Array.sort(input);
+    var result =  input.sort();
     console.log("My result--> %s", result);
     res.send(result);
 });
 
 
-export default router;
+export default router2;
